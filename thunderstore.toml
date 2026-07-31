@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "Sparroh"
 name = "CollectableWaypoints"
-description = "Shows map waypoints for undiscovered data logs, pumpkins, and bears so you can track collectables more easily."
+description = "Shows map waypoints for undiscovered data logs, pumpkins, bears, and other punch collectables so you can track them more easily."
 websiteUrl = "https://github.com/Little-Sparroh/CollectableWaypoints"
 containsNsfwContent = false
 
@@ -17,7 +17,7 @@ readme = "README.md"
 outdir = "build"
 
 [[build.copy]]
-source = "bin/Release/net48/CollectableWaypoints.dll"
+source = "bin/Release/netstandard2.1/CollectableWaypoints.dll"
 target = "BepInEx/plugins/CollectableWaypoints.dll"
 
 [[build.copy]]
@@ -30,7 +30,7 @@ target = "LICENSE"
 
 [publish]
 repository = "https://thunderstore.io"
-communities = [ "mycopunk" ]
+communities = ["mycopunk"]
 
 [publish.categories]
-mycopunk = [ "client" ]
+mycopunk = ["client"]
